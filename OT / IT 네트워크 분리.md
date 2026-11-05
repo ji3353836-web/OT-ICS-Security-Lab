@@ -31,22 +31,22 @@ vlan 10
 vlan 20
  name IT
 
-int vlan 10
- ip add 192.168.10.1 255.255.255.0
- n sh
+interface vlan 10
+ ip address 192.168.10.1 255.255.255.0
+ no shutdown
 
-int vlan 20
- ip add 10.0.0.1 255.255.255.0
- n sh
+interface vlan 20
+ ip address 10.0.0.1 255.255.255.0
+ no shutdown
 
-int f0/10
- sw m acc
- sw acc vlan 10
-
+interface f0/10
+ switchport mode access
+ switchport access vlan 10
+ no shutdown
 int f0/20
- sw m access
- sw m ac vlan 20
-
+ switchport mode access
+ switchport access vlan 20
+ no shutdown
 ip routing
 ```
 
