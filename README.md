@@ -7,4 +7,5 @@ OT/IT 망 분리, Modbus 프로토콜 분석, Suricata 기반 침입 탐지 실�
 - Lab 03: OT 침입 탐지 (Suricata)
 
 자격증: 네트워크관리사 2급, ITQ MASTER
+
 Email: sim20910@naver.com
