@@ -1,7 +1,7 @@
 # OT-ICS-Security-Lab
 
 > OT/ICS 보안 구축 실습 기록**  
-> `Smart Factory OT Security | Network Segmentation | Modbus | IDS`
+> `OT Security | Network Segmentation | Modbus | IDS`
 
 ---
 
