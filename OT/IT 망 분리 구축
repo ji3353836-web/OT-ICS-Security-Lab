@@ -1,0 +1,36 @@
+
+## Lab 01: OT/IT 망 분리 구축
+
+### 1. 토폴로지
+- **OT-Core-SW (3560 Multilayer Switch)**: VLAN 10(OT), VLAN 20(IT) 라우팅
+- **OT-SW (2960 Switch)**: OT PC 2대 연결
+- **IT-SW (2960 Switch)**: IT PC 2대 연결
+- **IP 대역**
+    - OT: 192.168.10.0/24 (Gateway: 192.168.10.1)
+    - IT: 10.0.0.0/24 (Gateway: 10.0.0.1)
+
+### 2. 핵심 설정
+
+**OT-Core-SW (3560)**
+```cisco
+vlan 10
+ name OT
+vlan 20
+ name IT
+!
+interface vlan 10
+ ip address 192.168.10.1 255.255.255.0
+ no shutdown
+!
+interface vlan 20
+ ip address 10.0.0.1 255.255.255.0
+ no shutdown
+!
+interface fa0/10
+ switchport mode access
+ switchport access vlan 10
+!
+interface fa0/20
+ switchport access vlan 20
+!
+ip routing
