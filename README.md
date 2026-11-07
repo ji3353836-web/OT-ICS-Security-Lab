@@ -7,5 +7,3 @@ OT/IT 망 분리, Modbus 프로토콜 분석, Suricata 기반 침입 탐지 실�
 - Lab 03: OT 침입 탐지 (Suricata)
 
 Email: sim20910@naver.com
-
-Velog: https://velog.io/@sim20910/series
