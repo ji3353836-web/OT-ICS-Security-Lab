@@ -49,8 +49,8 @@ ip routing
 
 ### 통신 테스트
 
-[OT-PC1핑성공](<img width="636" height="509" alt="image" src="https://github.com/user-attachments/assets/5fc665b5-2b38-4d62-b97e-1089c6b36a1e" />
-)
+<img width="636" height="509" alt="image" src="https://github.com/user-attachments/assets/5fc665b5-2b38-4d62-b97e-1089c6b36a1e" />
+
 
 - OT-PC1에서 Gateway 192.168.10.1로 Ping 성공
 - VLAN 간 L3 통신 확인
