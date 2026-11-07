@@ -70,4 +70,4 @@ ip routing
 
 ## Github
 
-https://github.com/ji3353836-web/OT-ICS-Security-Lab
+https://github.com/simjungyu/OT-ICS-Security-Lab
