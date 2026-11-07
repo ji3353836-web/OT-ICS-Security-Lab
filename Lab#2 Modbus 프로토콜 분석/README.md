@@ -70,4 +70,4 @@ Modbus 를 펼치면 이렇게 나온다.
 
 ## Github
 
-https://github.com/ji3353836-web/OT-ICS-Security-Lab
+https://github.com/simjungyu/OT-ICS-Security-Lab
