@@ -3,9 +3,6 @@
 OT/ICS 보안 구축 실습 기록
 
 OT Security | Network Segmentation | Modbus | IDS
-
-2026-11-06
-
 ---
 
 ## Lab 01 - OT/IT 망 분리 구축
