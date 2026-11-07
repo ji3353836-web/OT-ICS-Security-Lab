@@ -10,7 +10,7 @@ OT Security | Network Segmentation | Modbus | IDS
 
 ### 구성 토폴로지
 
-[토폴로지](https://github.com/user-attachments/assets/81c83eac-0c5d-4859-82c6-43d621c15f03)
+<img width="386" height="289" alt="image" src="https://github.com/user-attachments/assets/6c4288a1-d023-4c94-bafc-db2e1c7e4040" />
 
 | 구분 | Network | VLAN | Gateway |
 | --- | --- | --- | --- |
@@ -49,7 +49,8 @@ ip routing
 
 ### 통신 테스트
 
-[OT-PC1핑성공](https://github.com/user-attachments/assets/521fb637-c1f6-47da-a6be-d65852f508b2)
+[OT-PC1핑성공](<img width="636" height="509" alt="image" src="https://github.com/user-attachments/assets/5fc665b5-2b38-4d62-b97e-1089c6b36a1e" />
+)
 
 - OT-PC1에서 Gateway 192.168.10.1로 Ping 성공
 - VLAN 간 L3 통신 확인
