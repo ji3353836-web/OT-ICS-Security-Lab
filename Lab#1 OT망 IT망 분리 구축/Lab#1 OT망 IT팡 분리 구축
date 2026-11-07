@@ -1,0 +1,60 @@
+# Lab 01: OT/IT 망 분리 구축 (【entity-Cisco¦canonical_name=Cisco】 Packet Tracer)
+
+> 2026-11-06 | OT Security | Network Segmentation | Modbus | IDS
+>
+> OT/ICS 보안 구축 실습 기록
+
+---
+
+## 📋 개요
+
+실무에서 OT망과 IT망을 분리하는 첫 단계인 **L3 분리**를 구현한 실습이다.
+VLAN으로 OT망과 IT망을 나누고, L3 스위치에서 라우팅을 통해 통신을 제어했다.
+
+---
+
+## 🌐 구성 토폴로지
+
+<img width="386" height="289" alt="토폴로지" src="https://github.com/user-attachments/assets/81c83eac-0c5d-4859-82c6-43d621c15f03" />
+
+| 구분 | 네트워크 | VLAN | Gateway |
+| :--- | :--- | :--- | :--- |
+| **OT Network** | 192.168.10.0/24 | VLAN 10 | 192.168.10.1 |
+| **IT Network** | 10.0.0.0/24 | VLAN 20 | 10.0.0.1 |
+
+- **OT Network:** PLC, HMI, 센서 등 공장 설비가 있는 망
+- **IT Network:** 사무실 PC, 인터넷이 있는 망
+
+---
+
+## ⚙️ Config
+
+### OT-Core-SW
+
+```cisco
+hostname OT-Core-SW
+vlan 10
+ name OT
+vlan 20
+ name IT
+
+interface vlan 10
+ ip address 192.168.10.1 255.255.255.0
+ no shutdown
+
+interface vlan 20
+ ip address 10.0.0.1 255.255.255.0
+ no shutdown
+
+interface f0/10
+ switchport mode access
+ switchport access vlan 10
+ no shutdown
+
+interface f0/20
+ switchport mode access
+ switchport access vlan 20
+ no shutdown
+
+ip routing
+```
